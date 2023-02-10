@@ -1,5 +1,3 @@
-INSERT INTO personne VALUES ('Chabas', 'Tom', 19);
-INSERT INTO personne VALUES ('Chabas', 'Paul', 19);
 INSERT INTO personne VALUES ('Chabas', 'Remi', 19);
 INSERT INTO personne VALUES ('Dupont', 'Jacques', 35);
 INSERT INTO personne VALUES ('Martin', 'Emilie', 25);
