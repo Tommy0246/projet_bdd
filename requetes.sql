@@ -32,3 +32,8 @@ select Garage.ID_garage, nom_garage, surface, Logement.ID_logement from Garage r
 
 SELECT nom_garage, surface FROM Garage WHERE surface > (SELECT AVG(surface) FROM Garage);
 SELECT Logement.ID_logement, nom_garage, surface FROM Logement INNER JOIN Garage ON Logement.ID_logement = Garage.ID_garage WHERE surface > 100;
+
+select nom, surface from Garage where surface in ( 100 , 140, 160 );
+select * from Logement where prix > any (select prix from Logement where tipe = 'maison');
+select * from Logement where prix > all (select prix from Logement where tipe = 'appartement');
+select * from personne where exists ( select nom from personne where prenom = 'Darth' );
