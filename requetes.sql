@@ -55,3 +55,10 @@ select MIN(prix) as max_prix from Logement;
 select AVG(age) as moy_age from personne;
 select COUNT(*) from (SELECT nom, prenom from Personne WHERE Personne.age <= 20);
 
+select ID_garage, nom, max(surface) from Garage;
+select MIN(date_visite) from Visite;
+select SUM(commission) from transac where type = 'vente';
+select adresse, nombre_pieces, prix FROM Logement WHERE prix > (SELECT AVG(prix) FROM Logement);
+select count(*) from Logement where Logement.tipe = 'maison';
+
+
