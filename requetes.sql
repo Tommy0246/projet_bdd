@@ -37,3 +37,10 @@ select nom, surface from Garage where surface in ( 100 , 140, 160 );
 select * from Logement where prix > any (select prix from Logement where tipe = 'maison');
 select * from Logement where prix > all (select prix from Logement where tipe = 'appartement');
 select * from personne where exists ( select nom from personne where prenom = 'Darth' );
+
+
+select MAX(surface),ID_garage, nom from Garage;
+select MIN(date_visite) from Visite;
+select SUM(commission) from transac where tipe = 'maison';
+SELECT adresse, nombre_pieces, prix FROM Logement WHERE prix > (SELECT AVG(prix) FROM Logement);
+count(*) from Logement where Logement.tipe = 'maison';
