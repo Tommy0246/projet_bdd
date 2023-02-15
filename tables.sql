@@ -4,14 +4,14 @@ CREATE TABLE Agence(
    PRIMARY KEY(ID_agence)
 );
 
-CREATE TABLE personne(
+CREATE TABLE Personne(
    nom VARCHAR(50),
    prenom VARCHAR(50),
    age INT NOT NULL,
    PRIMARY KEY(nom)
 );
 
-CREATE TABLE etat_habitation(
+CREATE TABLE Etat_habitation(
    ID_etat INT,
    etat VARCHAR(50),
    PRIMARY KEY(ID_etat)
@@ -44,7 +44,7 @@ CREATE TABLE Garage(
    FOREIGN KEY(ID_logement) REFERENCES Logement(ID_logement)
 );
 
-CREATE TABLE transac(
+CREATE TABLE Transac(
    ID_transaction INT,
    commission INT NOT NULL,
    type_vente VARCHAR(50) NOT NULL,
