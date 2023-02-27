@@ -196,5 +196,5 @@ INSERT INTO Visite VALUES (26, '2023-03-27', 'Etchebest', 27, 1);
 INSERT INTO Visite VALUES (27, '2023-03-28', 'Strummer', 28, 1);
 INSERT INTO Visite VALUES (28, '2023-03-29', 'Pop', 29, 1);
 INSERT INTO Visite VALUES (29, '2023-03-30', 'Ramone', 30, 1);
-INSERT INTO Visite VALUES (24, '2023-03-25', 'Ramone', 25, 1);
-INSERT INTO Visite VALUES (24, '2023-03-22', 'Pop', 25, 1);
+INSERT INTO Visite VALUES (30, '2023-03-25', 'Ramone', 25, 1);
+INSERT INTO Visite VALUES (31, '2023-03-22', 'Pop', 25, 1);
